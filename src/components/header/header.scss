@@ -1,3 +1,19 @@
 .Header{
     height: 200px;
+    font-family: Maven Pro;
+    background: transparent;
+    .containerH1{
+        width: auto;
+    }
+    h1{
+        margin-top:0px;
+        padding-top:10px;
+        font-size: 70px;
+        text-align: center;
+        h1.orangeTxt{
+            color: #F4AF7A;
+            margin-bottom: 0px;
+            display: inline;
+        }
+    }
 }
