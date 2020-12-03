@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import './header.scss'
 import Sidebar from "../sidebar";
 import Navbar from "../navbar";
+import { HeroSection } from "../heroSection";
 
 export default function Header(){
     const [isOpen, setIsOpen] = useState(false)
@@ -15,9 +16,8 @@ export default function Header(){
         <div className="Header">
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
-            
+            <HeroSection></HeroSection>
             <div className="containerH1">
-                <h1>Din <h1 className="orangeTxt">konsult- och rekryteringspartner</h1> där ingen utmaning är för stor</h1>
                 
             </div>
         </div>
