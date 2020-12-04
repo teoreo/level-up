@@ -39,7 +39,7 @@ export const HeroSection = () => {
                          > 
                         Lediga jobb {hover ? <ArrowForward /> : <ArrowRight
                             />}
-                        </Button> 
+                        </Button>
                     </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>

@@ -61,6 +61,7 @@ export const HeroH1 = styled.h1`
     color: #fff;
     font-size: 48px;
     text-align: center;
+    margin-bottom: 2px;
     
     @media screen and (max-width: 786px){
         font-size: 40px;
@@ -87,7 +88,7 @@ export const HeroP = styled.p`
 `;
 
 export const HeroBtnWrapper = styled.div`
-    margin-top: 32px;
+    margin-top: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;

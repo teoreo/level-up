@@ -4,6 +4,7 @@ import Sidebar from "../sidebar";
 import Navbar from "../navbar";
 import { HeroSection } from "../heroSection";
 
+
 export default function Header(){
     const [isOpen, setIsOpen] = useState(false)
 
