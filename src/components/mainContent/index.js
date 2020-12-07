@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { InfoContainer,
     InfoWrapper,
     InfoRow,
@@ -9,7 +10,7 @@ import { InfoContainer,
     Subtitle,
     Column2,
     ImgWrapper,
-    Img 
+    Img
 } from './mainContentElements';
 
 
@@ -23,7 +24,9 @@ const MainContent = ({
     darkText,
     description,
     img,
-    alt
+    alt,
+    primary,
+    dark
 }) => {
    
     return (
@@ -40,7 +43,7 @@ const MainContent = ({
                   </Column1>
                   <Column2>
                     <ImgWrapper>
-                        <Img src={img} alt={alt}/>
+                        <Img src={img} alt={alt} />
                     </ImgWrapper>
                   </Column2>
               </InfoRow>
