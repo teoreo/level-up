@@ -1,7 +1,6 @@
 import styled from 'styled-components'; 
 export const InfoContainer = styled.div`
     color: #fff;
-    border: solid 1px black;
     margin-top: 300px;
     background: ${({lightBg}) => (lightBg ? '#010606' : '#f9f9f9')}
     ;
@@ -79,19 +78,21 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
     max-width: 440px;
     margin-bottom: 35px;
-    font-size: 18px;
+    text-align: center;
+    font-size: 22px;
     line-height: 24px;
-    color: ${({darkText}) => (darkText ? '#010606' : '#fff')}
+    color: ${({darkText}) => (darkText ? '#fff' : '#010606')}
 `;
 
 export const ImgWrapper = styled.div`
-    max-width: 555px;
+    max-width: 500px;
+    margin: auto;
     height: 100%;
 `;
 
 
 export const Img = styled.img`
-    width: 100%
-    margin 0 0 10px 0;
+    width: 80%;
+    margin: auto;
     padding-right: 0;
 `;

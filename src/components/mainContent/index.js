@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { InfoContainer,
     InfoWrapper,
     InfoRow,
@@ -35,14 +34,20 @@ const MainContent = ({
           <InfoWrapper>
               <InfoRow imgStart={imgStart}>
                   <Column1>
-                  <TextWrapper>
+                  <TextWrapper smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                  primary={primary ? 1 : 0} /* om det 1 = true 0 = false */
+                  dark={ dark ? 1 : 0 }>
                       <TopLine>{topLine}</TopLine>
                       <Heading lightText={lightText}> {headline}</Heading>
-                      <Subtitle dark={darkText}>{description}</Subtitle>
                   </TextWrapper>
                   </Column1>
                   <Column2>
                     <ImgWrapper>
+                        <Subtitle dark={darkText}>{description}</Subtitle>
                         <Img src={img} alt={alt} />
                     </ImgWrapper>
                   </Column2>
