@@ -18,9 +18,6 @@ export default function Header(){
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <HeroSection></HeroSection>
-            <div className="containerH1">
-                
-            </div>
         </div>
         </React.Fragment>
     )

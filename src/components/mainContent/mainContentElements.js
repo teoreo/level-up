@@ -1,19 +1,19 @@
 import styled from 'styled-components'; 
 export const InfoContainer = styled.div`
     color: #fff;
-    margin-top: 300px;
+    margin-top: 280px;
     background: ${({lightBg}) => (lightBg ? '#010606' : '#f9f9f9')}
     ;
     
     @media screen and (max-width: 768px){
-        padding: 680px 0;
+        padding: 100px 0;
     }
 `;
 
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
+    height: 800px;
     /* width: 100%; */
     margin-right: auto;
     margin-left: auto;
@@ -21,7 +21,7 @@ export const InfoWrapper = styled.div`
     justify-content: center;
 `
 export const InfoRow = styled.div`
-    margin-top: 400px;
+    margin-top: 300px;
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items:center;
@@ -47,7 +47,7 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-    maz-width: 540px;
+    max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
 `;

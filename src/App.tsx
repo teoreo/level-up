@@ -5,15 +5,16 @@ import desktopImage from './assets/header-background.jpg';
 import mobileImage from './assets/header-background-mobile.jpg';
 import { BrowserRouter as Router } from 'react-router-dom';
 import MainContent from './components/mainContent';
-import { mainObjOne } from './components/mainContent/data';
+import { mainObjOne, mainObjTwo } from './components/mainContent/data';
 
 function App() {
-  const imageUrl = window.innerWidth >= 650 ? desktopImage : mobileImage;
+ /* const imageUrl = window.innerWidth >= 650 ? desktopImage : mobileImage;*/
   return (
-    <div className="App" style={{backgroundImage: `url(${imageUrl})` }}>
+    <div className="App" /*style={{backgroundImage: `url(${imageUrl})` }}*/>
       <Router> 
         <Header></Header>
         <MainContent {...mainObjOne} />
+        <MainContent {...mainObjTwo} />
       </Router>
      
     </div>
